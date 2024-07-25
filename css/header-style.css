@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --primary: #DBB957;
+    --secondary: #A6979C;
+    --white: #ffffff;
+    --black: #000000;
+    --tertiary: #5C3D6A;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.main-caption{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 35px;
+}
+
+/* header stylesheet starts here */
+
+.main-header {
+    background-image: linear-gradient(351deg, transparent, #00000073), url(../images/header-bg.png);
+    height: 400px;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    flex-direction: column;
+}
+
+.page-header{
+    background-image: linear-gradient(351deg, transparent, #00000073), url(../images/header-bg.png);
+    height: 250px;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    flex-direction: column; 
+}
+
+.header-content {
+    display: flex;
+}
+
+.logo {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+
+
+.logo img {
+    width: 147px;
+    height: 147px;
+    position: absolute;
+}
+
+.link-salute {
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-salute ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+
+.link-salute ul li:last-child {
+    padding-left: 70px;
+}
+
+.links ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.links ul li a:hover {
+    color: var(--primary);
+}
+
+.link-salute ul li:last-child a:first-child {
+    background-color: var(--primary);
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-size: 16px;
+    color: var(--white);
+}
+
+.link-salute ul li:last-child a:last-child {
+    background-color: var(--secondary);
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 16px;
+    color: var(--white);
+    font-size: 16px;
+}
+
+.salute {
+    text-align: center;
+}
+
+.salute h1,
+.salute h2 {
+    margin: 0;
+    font-size: 75px;
+}
+
+.salute h2 {
+    font-weight: 900;
+}
+
+.salute h4 {
+    margin: 0;
+    font-size: 35px;
+}
+
+.salute p {
+    margin: 0;
+}
+
+/* header stylesheet ends here */
+
+
+/* ###################### */
+
+/* footer stylesheet starts here */
+
+footer{
+    border-top: 2px solid var(--primary);
+}
+
+.link-section {
+    display: flex;
+    padding: 30px 40px;
+    gap: 20px;
+
+}
+
+.link-section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link-section ul li {
+    padding: 2px 0;
+}
+
+.link-section ul li a {
+    text-decoration: none;
+    color: var(--black);
+
+}
+
+
+.company-info {
+    flex-basis: 33%;
+    padding: 0 40px 0 0;
+}
+
+.company-info img {
+    width: 30px;
+    padding: 10px 20px 0 0;
+    cursor: pointer;
+}
+
+.socila-icon {
+    display: flex;
+}
+
+.quick-link {
+    flex-basis: 12%;
+}
+
+.quick-link-2 {
+    flex-basis: 20%;
+}
+
+.brand-logo {
+    flex-basis: 10%;
+}
+
+.brand-logo img {
+    width: 142px;
+}
+
+.copy-right-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.cookies a {
+    color: var(--white);
+    padding: 20px;
+    text-decoration: none;
+}
+
+/* footer stylesheet ends here */
