@@ -49,7 +49,7 @@ body {
 .logo {
     flex-basis: 20%;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     position: relative;
 }
 
@@ -137,7 +137,7 @@ body {
 /* footer stylesheet starts here */
 
 footer{
-    border-top: 2px solid var(--primary);
+    border-top: 2px solid #A0A0A0;
 }
 
 .link-section {
