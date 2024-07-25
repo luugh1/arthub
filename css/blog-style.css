@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+.search{
+    text-align: center;
+    margin: 4% 0;
+}
+
+.search > div{
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+.search input {
+    width: 100%;
+    height: 45px;
+    border-radius: 7px;
+    border: none;
+    text-indent: 20px;
+    font-size: 18px;
+    border: 0;
+    outline: 0;
+}
+
+.search i{
+    font-size: 21px;
+    padding: 10px 10px;
+    background-color: #ccc;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.dis-flex-sb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.dis-flex-sb a{
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.blogs {
+    margin: 30px 8%;
+}
+
+.blog-card {
+    flex-basis: 23%;
+}
+
+.blog-card a{
+    color: var(--black);
+    text-decoration: none;
+}
+
+.card-wrap {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.blog__image img {
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+}
+
+.blog__caption {
+    font-weight: 300;
+    font-size: 14px;
+}
