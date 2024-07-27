@@ -49,12 +49,15 @@
 }
 
 /* Founders Styles */
-.founders-statement {
-
+.founders {
+    position: relative;
+    overflow: hidden;
 }
 
 .founders-title {
     text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
 .founders-par {
@@ -63,11 +66,56 @@
     margin: 0 0 20px;
 }
 
+.founders-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10vw;
+}
 
+.founders-tile {
+    flex: 1 1 250px;
+    max-width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px ;
+    box-sizing: border-box;
+}
 
+.founders-image {
+    max-width: 100%;
+    height: auto;
+}
 
+.founders-info {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
 
+.founders-artist {
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0 5px;
+}
 
+.founders-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.founders-social-img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 5px;
+}
 
 
 
@@ -79,6 +127,7 @@
 .news-title {
     text-align: center;
     padding-top: 20px;
+    font-size: 28px;
 }
 
 .news-par {
@@ -86,3 +135,4 @@
     font-size: 14px;
     margin: 0 0 20px;
 }
+
