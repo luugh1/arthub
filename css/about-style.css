@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Story Statement Styles */
+.story-sec {
+    background-color: rgba(166, 151, 156, 0.5);
+}
+
+.story {
+    display: block;
+    margin: 0 20px 20px 100px;
+}
+
+.story-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.story-statement h1 {
+    text-align: left;
+    font-size: 25px;
+    margin-left: 0;
+}
+
+.story-statement {
+    text-align: left;
+    font-weight: lighter;
+    font-size: 20px;
+    max-width: 50%;
+    margin: 50px;
+}
+
+.story-par {
+    background-color: white;
+    border: 2px solid #DBB957;
+    padding: 5px;
+}
+
+.story-image {
+    height: auto;
+    max-width: 90%;
+    padding: 20px;
+    margin-top: 75px;
+}
+
+/* Founders Styles */
+.founders {
+    position: relative;
+    overflow: hidden;
+}
+
+.founders-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.founders-par {
+    text-align: center;
+    font-size: 14px;
+    margin: 0 0 20px;
+}
+
+.founders-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10vw;
+}
+
+.founders-tile {
+    flex: 1 1 250px;
+    max-width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px ;
+    box-sizing: border-box;
+}
+
+.founders-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.founders-info {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.founders-artist {
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0 5px;
+}
+
+.founders-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.founders-social-img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+
+
+/* Latest News Styles */
+.news-sec {
+    background-color: rgba(219, 185, 87, 0.5);
+}
+
+.news-title {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 28px;
+}
+
+.news-par {
+    text-align: center;
+    font-size: 14px;
+    margin: 0 0 20px;
+}
+

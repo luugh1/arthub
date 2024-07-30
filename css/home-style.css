@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Mission Statement Styles */
+.mission-sec {
+    background-color: rgba(92, 61, 106, 0.5);
+}
+
+.mission {
+    display: block;
+    margin: 0 20px 20px 100px;
+}
+
+.mission-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-ission-statement h1 {
+    text-align: left;
+    font-size: 25px;
+    margin-left: 0;
+}
+
+.mission-statement {
+    text-align: left;
+    font-weight: lighter;
+    font-size: 20px;
+    max-width: 50%;
+    margin: 50px;
+}
+
+.mission-image {
+    height: auto;
+    max-width: 90%;
+    padding: 20px;
+}
+
+/* Painting Styles */
+.paintings {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.painting-statement {
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 0 0 20px;
+}
+
+.paintings-category {
+    font-size: 25px;
+    margin-left: 0;
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.paintings-container {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.paintings-container::-webkit-scrollbar {
+    display: none;
+}
+
+.paintings-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.paintings-image {
+    position: relative;
+    max-width: 200px;
+    height: auto;
+    overflow: hidden;
+}
+
+.paintings-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.paintings-info {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.paintings-artist {
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0 5px;
+}
+
+.art-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.paintings-social {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+
+.pre-btn,
+.nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+    z-index: 8;
+}
+
+.pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.nxt-btn {
+    right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+    opacity: 1;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+    opacity: 0.2;
+}
+
+/*
+.collection-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.collection {
+    position: relative;
+}
+
+.collection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+    grid-column: span 2;
+    margin-bottom: 10px;
+}
+*/
+.paint-button {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #DBB957;
+    padding: 10px 40px;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.paint-button:hover {
+    border-color: #A6979C;
+}
+
+/* Sculptures Styles */
+.sculptures {
+    background-color: #A6979C;
+}
+
+.sculpt {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.sculpt-statement {
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 0 0 20px;
+}
+
+.sculpt-category {
+    font-size: 25px;
+    margin-left: 0;
+    text-align: center;
+    margin: 0 0 20px;
+    padding-top: 30px;
+}
+
+.sculpt-container {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.sculpt-container::-webkit-scrollbar {
+    display: none;
+}
+
+.sculpt-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.sculpt-image {
+    position: relative;
+    max-width: 200px;
+    height: auto;
+    overflow: hidden;
+}
+
+.sculpt-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sculpt-info {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.sculpt-artist {
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0 5px;
+}
+
+.art-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.sculpt-social {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+
+.scpre-btn,
+.scnxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.scpre-btn {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.scnxt-btn {
+    right: 0;
+}
+
+.scpre-btn img,
+.scnxt-btn img {
+    opacity: 1;
+}
+
+.scpre-btn:hover img,
+.scnxt-btn:hover img {
+    opacity: 0.2;
+}
+
+/*
+.collection-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.collection {
+    position: relative;
+}
+
+.collection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+}*/
+
+.collection:nth-child(3) {
+    grid-column: span 2;
+    margin-bottom: 10px;
+}
+
+.sculpt-button {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #A6979C;
+    padding: 10px 40px;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sculpt-button:hover {
+    border-color: #DBB957;
+}
+
+/* Photography Styles */
+
+
+/* Drawings Styles */
