@@ -56,7 +56,7 @@
 }
 
 .blog-card {
-    flex-basis: 23%;
+    flex-basis: 25%;
 }
 
 .blog-card a{
@@ -72,12 +72,18 @@
 }
 
 .blog__image img {
-    height: 200px;
-    width: 250px;
+    height: 400px;
+    width: 100%;
     object-fit: cover;
 }
 
 .blog__caption {
     font-weight: 300;
     font-size: 14px;
+}
+
+@media screen and (max-width: 1920px){
+    .blog__image img {
+        height: 200px;
+    }
 }
