@@ -40,42 +40,61 @@
     padding: 20px;
 }
 
-/* Painting Styles */
-.paintings {
+/* Section Styles */
+.paintings, .sculptures, .photography, .drawings {
     position: relative;
     overflow: hidden;
     padding: 20px;
 }
 
-.painting-statement {
+.painting-statement, .photo-statement {
     text-align: center;
     font-size: 20px;
     font-weight: lighter;
     margin: 0 0 20px;
+    font-weight: 300;
 }
 
-.paintings-category {
+.sculpt-statement, .drawing-statement {
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 0 0 20px;
+    color: white; 
+    font-weight: 300;
+}
+
+.paintings-category, .photo-category {
     font-size: 25px;
-    margin-left: 0;
     text-align: center;
     margin: 0 0 20px;
 }
 
-.paintings-container {
+.sculpt-category, .drawing-category {
+    font-size: 25px;
+    text-align: center;
+    margin: 0 0 20px;
+    color: white;
+}
+
+.paintings-container, .sculpt-container, .photo-container, .drawing-container {
     padding: 0 10vw;
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
+    position: relative;
+    max-width: calc(4 * 250px + 3 * 30px);
+    margin: 0 auto;
 }
 
-.paintings-container::-webkit-scrollbar {
+.paintings-container::-webkit-scrollbar, .sculpt-container::-webkit-scrollbar, .photo-container::-webkit-scrollbar, .drawing-container::-webkit-scrollbar {
     display: none;
 }
 
-.paintings-card {
+.paintings-card, .sculpt-card, .photo-card, .drawing-card {
     flex: 0 0 auto;
     width: 250px;
-    height: 450px;
+    height: 400px;
     margin-right: 40px;
     display: flex;
     flex-direction: column;
@@ -84,29 +103,36 @@
     padding: 40px 0;
 }
 
-.paintings-image {
+.paintings-image, .sculpt-image, .photo-image, .drawing-image {
     position: relative;
     max-width: 200px;
     height: auto;
     overflow: hidden;
 }
 
-.paintings-thumb {
+.paintings-thumb, .sculpt-thumb, .photo-thumb, .drawing-thumb {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.paintings-info {
+.paintings-info, .sculpt-info, .photo-info, .drawing-info {
     width: 100%;
     height: 100px;
     padding-top: 10px;
 }
 
-.paintings-artist {
+.paintings-artist, .photo-artist {
     text-align: center;
     cursor: pointer;
     margin: 10px 0 5px;
+}
+
+.sculpt-artist, .drawing-artist {
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0 5px;
+    color: white;
 }
 
 .art-socials {
@@ -117,7 +143,7 @@
     padding: 10px 0;
 }
 
-.paintings-social {
+.paintings-social, .sculpt-social, .photo-social, .drawing-social {
     width: 30px;
     height: auto;
     cursor: pointer;
@@ -125,76 +151,9 @@
     margin: 0 5px;
 }
 
-
-.pre-btn,
-.nxt-btn {
-    border: none;
-    width: 10vw;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-    cursor: pointer;
-    z-index: 8;
-}
-
-.pre-btn {
-    left: 0;
-    transform: rotate(180deg);
-}
-
-.nxt-btn {
-    right: 0;
-}
-
-.pre-btn img,
-.nxt-btn img {
-    opacity: 1;
-}
-
-.pre-btn:hover img,
-.nxt-btn:hover img {
-    opacity: 0.2;
-}
-
-/*
-.collection-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-}
-
-.collection {
-    position: relative;
-}
-
-.collection img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.collection p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-    text-transform: capitalize;
-}
-
-.collection:nth-child(3) {
-    grid-column: span 2;
-    margin-bottom: 10px;
-}
-*/
-.paint-button {
+/* Painting and Photography Styles */
+/* Buttons */
+.paint-button, .photo-button {
     display: block;
     margin: 20px auto;
     border: 2px solid #DBB957;
@@ -208,103 +167,12 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
-.paint-button:hover {
+.paint-button:hover, .photo-button:hover {
     border-color: #A6979C;
 }
 
-/* Sculptures Styles */
-.sculptures {
-    background-color: #A6979C;
-}
-
-.sculpt {
-    position: relative;
-    overflow: hidden;
-    padding: 20px;
-}
-
-.sculpt-statement {
-    text-align: center;
-    font-size: 20px;
-    font-weight: lighter;
-    margin: 0 0 20px;
-}
-
-.sculpt-category {
-    font-size: 25px;
-    margin-left: 0;
-    text-align: center;
-    margin: 0 0 20px;
-    padding-top: 30px;
-}
-
-.sculpt-container {
-    padding: 0 10vw;
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-}
-
-.sculpt-container::-webkit-scrollbar {
-    display: none;
-}
-
-.sculpt-card {
-    flex: 0 0 auto;
-    width: 250px;
-    height: 450px;
-    margin-right: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 0;
-}
-
-.sculpt-image {
-    position: relative;
-    max-width: 200px;
-    height: auto;
-    overflow: hidden;
-}
-
-.sculpt-thumb {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.sculpt-info {
-    width: 100%;
-    height: 100px;
-    padding-top: 10px;
-}
-
-.sculpt-artist {
-    text-align: center;
-    cursor: pointer;
-    margin: 10px 0 5px;
-}
-
-.art-socials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 10px 0;
-}
-
-.sculpt-social {
-    width: 30px;
-    height: auto;
-    cursor: pointer;
-    padding: 10px;
-    margin: 0 5px;
-}
-
-
-.scpre-btn,
-.scnxt-btn {
+/*Gallery Image Buttons */
+.pre-btn, .nxt-btn, .phpre-btn, .phnxt-btn {
     border: none;
     width: 10vw;
     height: 100%;
@@ -313,68 +181,53 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: transparent;
+    background: white;
     cursor: pointer;
-    z-index: 1;
+    z-index: 8;
 }
 
-.scpre-btn {
+.scpre-btn, .scnxt-btn, .drpre-btn, .drnxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A6979C;
+    cursor: pointer;
+    z-index: 8;
+}
+
+.pre-btn, .scpre-btn, .phpre-btn, .drpre-btn {
     left: 0;
     transform: rotate(180deg);
 }
 
-.scnxt-btn {
+.nxt-btn, .scnxt-btn, .phnxt-btn, .drnxt-btn {
     right: 0;
 }
 
-.scpre-btn img,
-.scnxt-btn img {
+.pre-btn img, .nxt-btn img, .scpre-btn img, .scnxt-btn img, .phpre-btn img, .phnxt-btn img, .drpre-btn img, .drnxt-btn img {
     opacity: 1;
 }
 
-.scpre-btn:hover img,
-.scnxt-btn:hover img {
+.pre-btn:hover img, .nxt-btn:hover img, .scpre-btn:hover img, .scnxt-btn:hover img, .phpre-btn:hover img, .phnxt-btn:hover img, .drpre-btn:hover img, .drnxt-btn:hover img {
     opacity: 0.2;
 }
 
-/*
-.collection-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+/* Sculptures and Drawings Styles */
+
+.sculptures, .drawings {
+    background-color: #A6979C;
 }
 
-.collection {
-    position: relative;
-}
-
-.collection img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.collection p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-    text-transform: capitalize;
-}*/
-
-.collection:nth-child(3) {
-    grid-column: span 2;
-    margin-bottom: 10px;
-}
-
-.sculpt-button {
+/* Buttons */
+.sculpt-button, .drawing-button {
     display: block;
     margin: 20px auto;
-    border: 2px solid #A6979C;
+    border: 2px solid white;
     padding: 10px 40px;
     font-size: 16px;
     color: black;
@@ -385,11 +238,6 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
-.sculpt-button:hover {
+.sculpt-button:hover, .drawing-button:hover {
     border-color: #DBB957;
 }
-
-/* Photography Styles */
-
-
-/* Drawings Styles */
