@@ -1,0 +1,26 @@
+
+.event-hero {
+    background-image: linear-gradient(351deg, transparent, #00000073), url(../images/Event-Images/Event-Home.jpg);
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    flex-direction: column;
+}
+
+.events-row{
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    
+}
+
+.events-row .event{
+    width: 565px;
+    height: 548px;
+    margin-left: 10px;
+}
+
+.events-row .event img{
+    width: 100%;
+}
