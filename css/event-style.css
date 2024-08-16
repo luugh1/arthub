@@ -8,13 +8,34 @@
     flex-direction: column;
 }
 
+.event-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.evts-btn {
+    padding: 10px 30px;
+    background-color: #DBB957;
+    border-color: #DBB957;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
 .events-row{
     display: flex;
     max-width: 100%;
     width: 100%;
-    
 }
 
+.events-main{
+    padding: 20px;
+}
+
+.events-main h2{
+    text-align: center;
+}
 .events-row .event{
     width: 565px;
     height: 548px;
@@ -23,4 +44,154 @@
 
 .events-row .event img{
     width: 100%;
+}
+
+.event{
+    margin-bottom: 10px;
+}
+
+.events-row{
+    margin-bottom: 50px;
+}
+
+/* Carousel Section */
+.past-evts{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+}
+
+.carousel-image{
+    display: block;
+}
+.carousel-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Adjust width as needed */
+}
+
+.arrow {
+    font-size: 40px;
+    cursor: pointer;
+    color: #333;
+    user-select: none;
+}
+
+.left-arrow {
+    margin-right: 10px;
+}
+
+.right-arrow {
+    margin-left: 10px;
+}
+
+.arrow:hover {
+    color: #555;
+}
+
+/* Legal Section */
+
+.legal{
+    padding: 20px;
+}
+
+.legal h1{
+    text-align: center;
+}
+
+/* Create Event Section */
+main.create-event{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.evt-creation{
+    width: 734px;
+    height: 1110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: red;
+}
+
+.create-evt-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cancel-icon{
+    font-size: 22px;
+}
+
+.create-evt-profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.artist-profile{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.create-evt-profile h2{
+    font-size: 20px;
+}
+
+.describe{
+    width: 572px;
+    height: 86px;
+    border: 1px solid #000;
+}
+.event-holder{
+    height: 329px;
+    width: 576px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form input[type="text"]{
+    border: 1px solid #5C3D6A;
+    width: 573px;
+    height: 40px;
+}
+
+.evts-date{
+    display: flex;
+    justify-content: space-between;
+}
+.start-date{
+    width: 224px;
+    height: 66px;
+    border: 1px solid #000;
+    border-radius: 5px;
 }
