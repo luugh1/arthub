@@ -115,6 +115,10 @@ body {
     font-weight: 600;
 }
 
+.links ul li.active a {
+    color: var(--primary);
+}
+
 .links ul li a:hover {
     color: var(--primary);
 }
