@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="main-header event-hero">
+    <header class="page-header">
         <div class="header-content">
             <div class="logo">
                 <a href="index.html"><img src="images/Art Collab.png" alt="logo"></a>
@@ -21,7 +21,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About us</a></li>
                         <li><a href="artwork-showcase.html">Showcase</a></li>
-                        <li><a href="event.html">Events</a></li>
+                        <li class="active"><a href="./event.html">Events</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="blog-page.html">Articles</a></li>
                         <li><a href="#">Login</a><a href="#">Sign Up</a></li>
@@ -35,25 +35,35 @@
             <p>Connecting You to Creativity</p>
         </div>
     </header>
-    <main>
-        <h1>Art Events</h1>
+    <main class="events-main">
+        <section>
+            <h1>Art Events</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores veritatis distinctio debitis nesciunt quibusdam, corrupti
              laborum magnam quasi iste? Reiciendis dolorum cumque voluptas odit modi provident. Dolorem, eaque non. Officiis.
         </p>
-        <h2>Upcoming Events</h2>
+        <div class="event-head">
+            <h2>Upcoming Events</h2> <button class="evts-btn">Create Event</button>
+        </div>
+        
         <div class="events-container">
             <div class="events-row">
                 <div class="event">
                     <img src="images/Event-Images/Present Events/Birthday Events.jpg" alt="">
                     <h3>Birthday Event</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et risus tellus. Nam pharetra neque eu tortor pretium fermentum. 
+                        Nam turpis turpis, finibus eget facilisis quis, porta vitae tellus.</p>
                 </div>
                 <div class="event">
                     <img src="images/Event-Images/Present Events/Brand Events.jpg" alt="">
                     <h3>Brand Event</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et risus tellus. Nam pharetra neque eu tortor pretium fermentum. 
+                        Nam turpis turpis, finibus eget facilisis quis, porta vitae tellus.</p>
                 </div>
                 <div class="event">
                     <img src="images/Event-Images/Present Events/Concert Events.jpg" alt="">
                     <h3>Concert Event</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et risus tellus. Nam pharetra neque eu tortor pretium fermentum. 
+                        Nam turpis turpis, finibus eget facilisis quis, porta vitae tellus.</p>
                 </div>
             </div>
 
@@ -61,18 +71,45 @@
                 <div class="event">
                     <img src="images/Event-Images/Present Events/Muscial.jpg" alt="">
                     <h3>Musical Event</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et risus tellus. Nam pharetra neque eu tortor pretium fermentum. 
+                        Nam turpis turpis, finibus eget facilisis quis, porta vitae tellus.</p>
                 </div>
                 <div class="event">
                     <img src="images/Event-Images/Present Events/Wedding Events .jpg" alt="">
                     <h3>Wedding Event</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et risus tellus. Nam pharetra neque eu tortor pretium fermentum. 
+                        Nam turpis turpis, finibus eget facilisis quis, porta vitae tellus.</p>
                 </div>
                 <div class="event">
                     <img src="images/Event-Images/Present Events/Stage Event .jpg">
                     <h3>Stage Event</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et risus tellus. Nam pharetra neque eu tortor pretium fermentum. 
+                        Nam turpis turpis, finibus eget facilisis quis, porta vitae tellus.</p>
                 </div>
             </div>
 
         </div>
+        </section>
+
+        <section class="past-evts">
+            <h2>Past Events</h2>
+            <p>Take a look at some of our past events put on by creators like you!</p>
+            <div class="carousel-container">
+                <div class="carousel-container">
+                    <div class="arrow-container">
+                        <div class="arrow left-arrow">&#10094;</div>
+                    </div>
+                    <div class="carousel-image">
+                        <img src="images/Event-Images/Carousel.png" alt="Carousel Image">
+                    </div>
+                    <div class="arrow-container">
+                        <div class="arrow right-arrow">&#10095;</div>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
     </main>
 
     <footer>

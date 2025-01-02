@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Event</title>
+    <link rel="stylesheet" href="css/event-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main class="create-event">
+        <div class="evt-creation">
+            <div class="create-evt-head">
+                <h1>Create Event</h1>
+                <div class="cancel-icon">&#10006;</div>
+            </div>
+            <hr>
+            <div class="create-evt-profile">
+                <div class="artist-profile">
+                    <img src="" alt="">
+                </div>
+                <h2>Kim Shawn</h2>
+            </div>
+           
+
+            <textarea class="describe">Describe your art</textarea>
+            
+            <div class="event-holder">
+                <i class="fa-solid fa-upload"></i>
+                <p>Add photos/videos</p>
+            </div>
+            <form action="">
+                <p>Event Name</p>
+                <input type="text" placeholder="Event Name">
+                <p>Event Organizer</p>
+                <input type="text" placeholder="Event Organizer">
+                <p>In person or virtual</p>
+                <input type="radio" name="Means"> <label for="radio">In Person</label>
+                <input type="radio" name="Means"> <label for="radio">Virtual</label>
+
+                <div class="evts-date">
+                    <div class="start-date">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <div class="evts-date-details">
+                            <h3>Start Date</h3>
+                            <pre>12/03/2024   2:00pm</pre>
+                        </div>
+                    </div>
+
+                    <div class="start-date">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <div class="evts-date-details">
+                            <h3>Start Date</h3>
+                            <pre>12/03/2024   2:00pm</pre>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Create Event" class="evts-btn">
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

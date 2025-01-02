@@ -1,15 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
-/* header stylesheet starts here */
-.main-header {
-    background-image: linear-gradient(351deg, transparent, #00000073), url(../images/header-bg.png);
-    height: 400px;
-    display: flex;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    flex-direction: column;
-}
+
+
 
 .page-header {
     background-image: linear-gradient(351deg, transparent, #00000073), url(../images/header-bg.png);
